@@ -36,7 +36,9 @@ function all_cars_page() {
 
 	$path = drupal_get_path('module', 'methos');
 	drupal_add_js($path . '/js/app.js', array('weight' => 1));
+	drupal_add_js($path . '/js/angular-slider.min.js', array('weight' => 1));
 	drupal_add_css($path . '/css/car-style.css', array('group' => CSS_DEFAULT, 'every_page' => FALSE));
+	drupal_add_css($path . '/css/angular-slider.min.css', array('group' => CSS_DEFAULT, 'every_page' => FALSE));
 
 	return theme('all_cars');
 }

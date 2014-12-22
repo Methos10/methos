@@ -1,9 +1,13 @@
-.all-cars .search {
-    margin-bottom: 10px;
+.search-bar {
+    border: 1px solid #cecece;
+    height: 65px;
+    margin-bottom: 3px;
+    padding: 10px;
 }
 
 .cars {
     border: 1px solid #cecece;
+    background: #fff;
     float: left;
     height: 240px;
     margin-right: 5px;
@@ -15,6 +19,25 @@
     margin-top: 0;
 }
 
+.all-cars .search {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
 .all-cars .price label {
     display: inline;
+}
+
+.price-slider {
+    width: 250px;
+    float: left;
+}
+
+.price-slider .left {
+    float: left;
+}
+
+.price-slider .right {
+    float: right;
 }
