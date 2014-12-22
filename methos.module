@@ -1,0 +1,41 @@
+<?php
+
+/**
+* Implements hook_menu(),
+*/
+
+function methos_menu() {
+	$items['methos'] = array(
+		'title' => 'All car',
+		'page callback' => 'all_cars_page',
+		'access arguments' => array('access content'),
+	);
+
+	return $items;
+}
+
+/**
+* hook_theme(),
+*/
+
+function methos_theme() {
+	return array(
+		'all_cars' => array(
+			'template' => 'all-cars',
+		),
+	);
+}
+
+/**
+* All cars callback
+*/
+
+function all_cars_page() {
+
+	drupal_add_library('angularjs', 'angularjs');
+
+	$path = drupal_get_path('module', 'methos');
+	drupal_add_js($path . '/js/app.js', array('weight' => 1));
+
+	return theme('all_cars');
+}
