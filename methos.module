@@ -6,7 +6,7 @@
 
 function methos_menu() {
 	$items['methos'] = array(
-		'title' => 'All car',
+		'title' => 'Cars',
 		'page callback' => 'all_cars_page',
 		'access arguments' => array('access content'),
 	);
