@@ -6,5 +6,4 @@ cars.controller('carsController', function($scope, $http) {
 			return result.nodes;
 		})();
 	});
-
 });
