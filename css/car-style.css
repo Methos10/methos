@@ -1,10 +1,18 @@
+.all-cars .search {
+    margin-bottom: 10px;
+}
+
 .cars {
     border: 1px solid #cecece;
     float: left;
-    height: 260px;
+    height: 240px;
     margin-right: 5px;
     padding: 5px;
     width: 220px;
+}
+
+.cars h2 {
+    margin-top: 0;
 }
 
 .all-cars .price label {

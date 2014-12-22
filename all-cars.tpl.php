@@ -1,5 +1,5 @@
 <div ng-app="cars" class="all-cars" ng-controller="carsController">
-	<div class="field">
+	<div class="search">
 		<div class="label"><label>Search:</label></div>
 		<input class="long-search" type="text" ng-model="search.$">
 	</div>
