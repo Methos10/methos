@@ -1,8 +1,10 @@
 .cars {
     border: 1px solid #cecece;
     float: left;
+    height: 260px;
     margin-right: 5px;
     padding: 5px;
+    width: 220px;
 }
 
 .all-cars .price label {
